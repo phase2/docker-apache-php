@@ -68,7 +68,7 @@ pm.process_idle_timeout = 10s
 ; CGI.
 ; Note: Used when pm is set to either 'static' or 'dynamic'
 ; Note: This value is mandatory.
-pm.max_children = 2
+pm.max_children = {{getenv "PHP_MAX_CHILDREN"}}
 
 ; The number of child processes created on startup.
 ; Note: Used only when pm is set to 'dynamic'
@@ -219,11 +219,10 @@ catch_workers_output = yes
 php_flag[display_errors] = off
 ;php_admin_value[error_log] = /opt/rh/php55/root/var/log/php-fpm/www-error.log
 php_admin_flag[log_errors] = on
-php_value[memory_limit] = 256M
-php_value[opcache.memory_consumption] = 192
+php_value[memory_limit] = {{getenv "PHP_MEMORY_LIMIT"}}
+php_value[opcache.memory_consumption] = {{getenv "PHP_OPCACHE_MEMORY"}}
 
 ; Set session path to a directory owned by process user
 php_value[session.save_handler] = files
 php_value[session.save_path]    = /opt/rh/php55/root/var/lib/php/session
-php_value[soap.wsdl_cache_dir]  = /opt/rh/php55/root/var/lib/php/wsdlcache
 
