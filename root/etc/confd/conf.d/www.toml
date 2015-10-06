@@ -4,9 +4,4 @@ dest = "/opt/rh/php55/root/etc/php-fpm.d/www.conf"
 uid = 0
 gid = 0
 mode = "0644"
-keys = [
-  "PHP_MAX_EXECUTION_TIME",
-  "PHP_MEMORY_LIMIT",
-  "PHP_OPCACHE_MEMORY",
-  "PHP_MAX_CHILDREN",
-]
+keys = []
