@@ -1,0 +1,7 @@
+; Enable xdebug extension module
+{{ $xdebug := getenv "PHP_XDEBUG" }}
+{{ if eq $xdebug "true" }}
+zend_extension=xdebug.so
+{{ end }}
+
+; see http://xdebug.org/docs/all_settings

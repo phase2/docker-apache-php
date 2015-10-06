@@ -219,6 +219,7 @@ catch_workers_output = yes
 php_flag[display_errors] = off
 ;php_admin_value[error_log] = /opt/rh/php55/root/var/log/php-fpm/www-error.log
 php_admin_flag[log_errors] = on
+php_value[max_execution_time] = {{getenv "PHP_MAX_EXECUTION_TIME"}}
 php_value[memory_limit] = {{getenv "PHP_MEMORY_LIMIT"}}
 php_value[opcache.memory_consumption] = {{getenv "PHP_OPCACHE_MEMORY"}}
 
