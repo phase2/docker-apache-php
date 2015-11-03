@@ -27,7 +27,7 @@ EXPOSE 80
 
 COPY root /
 
-VOLUME ["/var/www", "/var/log/httpd"]
+VOLUME ["/var/log/httpd"]
 
 ENV PROXY_TIMEOUT           120
 ENV PHP_MAX_EXECUTION_TIME  30
