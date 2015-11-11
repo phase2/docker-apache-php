@@ -227,3 +227,5 @@ php_value[opcache.memory_consumption] = {{getenv "PHP_OPCACHE_MEMORY"}}
 php_value[session.save_handler] = files
 php_value[session.save_path]    = /opt/rh/php55/root/var/lib/php/session
 
+; Pass the full ENV through.
+clear_env = false
