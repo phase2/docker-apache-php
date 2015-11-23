@@ -2,11 +2,11 @@
   ServerName localhost
 
   ## Use the default docroot.
-  DocumentRoot "/var/www/html"
+  DocumentRoot "{{getenv "DOCROOT"}}"
   DirectoryIndex index.php index.html
 
   ## Additional overrides for the default VirtualHost directory.
-  <Directory "/var/www/html">
+  <Directory "{{getenv "DOCROOT"}}">
     Options Indexes FollowSymLinks MultiViews
     AllowOverride All
     Require all granted
