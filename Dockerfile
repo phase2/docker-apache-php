@@ -18,7 +18,6 @@ RUN yum -y install \
       php55-php-pecl-xhprof
 
 RUN ln -sfv /opt/rh/php55/root/usr/bin/* /usr/bin/ && \
-    ln -sfv /opt/rh/php55/root/usr/sbin/* /usr/sbin/ && \
-    cp -v /opt/php-fpm.conf /opt/rh/php55/root/etc/
+    ln -sfv /opt/rh/php55/root/usr/sbin/* /usr/sbin/
 
 COPY root /
