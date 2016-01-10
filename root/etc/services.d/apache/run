@@ -1,6 +1,0 @@
-#!/usr/bin/with-contenv sh
-
-exec /usr/sbin/httpd \
-  -d /etc/httpd \
-  -f conf/httpd.conf \
-  -DFOREGROUND
