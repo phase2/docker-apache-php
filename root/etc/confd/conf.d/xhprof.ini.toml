@@ -1,6 +1,6 @@
 [template]
 src = "xhprof.ini.tmpl"
-dest = "/opt/rh/php55/root/etc/php.d/xhprof.ini"
+dest = "/etc/opt/rh/rh-php56/php.d/15-xhprof.ini"
 uid = 0
 gid = 0
 mode = "0644"
