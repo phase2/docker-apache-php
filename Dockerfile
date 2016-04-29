@@ -1,23 +1,24 @@
 FROM phase2/apache-php-base
 
 RUN yum -y install \
-      https://www.softwarecollections.org/en/scls/remi/php56more/epel-7-x86_64/download/remi-php56more-epel-7-x86_64.noarch.rpm && \
+      http://rpms.remirepo.net/enterprise/7/remi/x86_64/remi-release-7.1-3.el7.remi.noarch.rpm && \
     yum -y install \
-      rh-php56 \
-      rh-php56-php-gd \
-      rh-php56-php-xml \
-      rh-php56-php-pdo \
-      rh-php56-php-mysql \
-      rh-php56-php-mbstring \
-      rh-php56-php-fpm \
-      rh-php56-php-opcache \
-      rh-php56-php-pecl-memcache \
-      rh-php56-php-pecl-xdebug \
-      # The packages below are from php56more.
-      more-php56-php-mcrypt \
-      more-php56-php-pecl-xhprof
+      php70 \
+      php70-php-gd \
+      php70-php-xml \
+      php70-php-pdo \
+      php70-php-mysql \
+      php70-php-mysqlnd \
+      php70-php-mbstring \
+      php70-php-fpm \
+      php70-php-opcache \
+      php70-php-pecl-memcache \
+      php70-php-pecl-xdebug \
+      php70-php-mcrypt
+      # There is no PHP 7 support for XHProf yet.
+      # php70-php-pecl-xhprof
 
-RUN ln -sfv /opt/rh/rh-php56/root/usr/bin/* /usr/bin/ && \
-    ln -sfv /opt/rh/rh-php56/root/usr/sbin/* /usr/sbin/
+RUN ln -sfv /opt/remi/php70/root/usr/bin/* /usr/bin/ && \
+    ln -sfv /opt/remi/php70/root/usr/sbin/* /usr/sbin/
 
 COPY root /
