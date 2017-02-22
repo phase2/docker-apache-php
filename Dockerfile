@@ -1,7 +1,7 @@
 FROM outrigger/apache-php-base
 
 RUN yum -y install \
-      http://rpms.remirepo.net/enterprise/7/remi/x86_64/remi-release-7.1-3.el7.remi.noarch.rpm && \
+      https://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum -y install \
       php71 \
       php71-php-gd \
