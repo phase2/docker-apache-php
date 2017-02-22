@@ -1,4 +1,4 @@
-FROM phase2/apache-php-base
+FROM outrigger/apache-php-base
 
 RUN yum -y install \
       https://www.softwarecollections.org/en/scls/remi/php55more/epel-7-x86_64/download/remi-php55more-epel-7-x86_64.noarch.rpm && \
