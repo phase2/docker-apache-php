@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t phase2/apache-php:php71 .
+docker build -t outrigger/apache-php:php71 .
