@@ -1,4 +1,4 @@
-FROM phase2/apache-php-base
+FROM outrigger/apache-php-base
 
 RUN yum -y install \
       http://rpms.remirepo.net/enterprise/7/remi/x86_64/remi-release-7.1-3.el7.remi.noarch.rpm && \
