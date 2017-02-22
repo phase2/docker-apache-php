@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t phase2/apache-php:php70 .
+docker build -t outrigger/apache-php:php70 .
