@@ -2,10 +2,8 @@
 
 > PHP application server for Apache w/ PHP-FPM
 
-[![](https://images.microbadger.com/badges/version/outrigger/apache-php.svg)](https://microbadger.com/images/outrigger/apache-php
-"Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/outrigger/apache-php.svg)](https://microbadger.com/images/outrigger/apache-php
-"Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/outrigger/apache-php:php71.svg)](https://microbadger.com/images/outrigger/apache-php:php71 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/outrigger/apache-php:php71.svg)](https://microbadger.com/images/outrigger/apache-php:php71 "Get your own image badge on microbadger.com")
 
 An image for running Apache with PHP-FPM based on outrigger/apache-php-base. Includes Apache and
 default VirtualHost configured
