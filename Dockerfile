@@ -18,7 +18,9 @@ RUN yum -y install \
       # There is no PHP 7 support for XHProf yet.
       # php71-php-pecl-xhprof
 
-RUN ln -sfv /opt/remi/php71/root/usr/bin/* /usr/bin/ && \
-    ln -sfv /opt/remi/php71/root/usr/sbin/* /usr/sbin/
+ENV PHP_HOME /opt/remi/php71
+RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
+    ln -sfv ${PHP_HOME}/root/usr/sbin/* /usr/sbin/ && \
+    ln -sfv /dev/stderr /var${PHP_HOME}/log/php-fpm/error.log
 
 COPY root /
