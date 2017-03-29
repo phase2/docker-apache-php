@@ -17,7 +17,9 @@ RUN yum -y install \
       php55-php-mcrypt \
       php55-php-pecl-xhprof
 
-RUN ln -sfv /opt/rh/php55/root/usr/bin/* /usr/bin/ && \
-    ln -sfv /opt/rh/php55/root/usr/sbin/* /usr/sbin/
+ENV PHP_HOME /opt/rh/php55
+RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
+    ln -sfv ${PHP_HOME}/root/usr/sbin/* /usr/sbin/ && \
+    ln -sfv /dev/stderr ${PHP_HOME}/root/var/log/php-fpm/error.log
 
 COPY root /
