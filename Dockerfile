@@ -17,7 +17,9 @@ RUN yum -y install \
       more-php56-php-mcrypt \
       more-php56-php-pecl-xhprof
 
-RUN ln -sfv /opt/rh/rh-php56/root/usr/bin/* /usr/bin/ && \
-    ln -sfv /opt/rh/rh-php56/root/usr/sbin/* /usr/sbin/
+ENV PHP_HOME /opt/rh/rh-php56
+RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
+    ln -sfv ${PHP_HOME}/root/usr/sbin/* /usr/sbin/ && \
+    ln -svf /dev/stderr /var${PHP_HOME}/log/php-fpm/error.log
 
 COPY root /
