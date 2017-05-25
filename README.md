@@ -30,4 +30,4 @@ Please email outrigger@phase2technology.com with security concerns.
 
 ## Maintainers
 
-[![Phase2 Logo](https://www.phase2technology.com/wp-content/uploads/2015/06/logo-retina.png)](https://www.phase2technology.com)
+[![Phase2 Logo](https://s3.amazonaws.com/phase2.public/logos/phase2-logo.png)](https://www.phase2technology.com)
