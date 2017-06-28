@@ -2,13 +2,22 @@
 
 > PHP application server for Apache w/ PHP-FPM
 
-[![](https://images.microbadger.com/badges/version/outrigger/apache-php:php70.svg)](https://microbadger.com/images/outrigger/apache-php:php70 "Get your own version badge on microbadger.com")
+## Supported tags and respective `Dockerfile` links
+
+-	[`php55` (*php55/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php55/Dockerfile)
+[![](https://images.microbadger.com/badges/image/outrigger/apache-php:php55.svg)](https://microbadger.com/images/outrigger/apache-php:php55 "Get your own image badge on microbadger.com")
+-	[`php56` (*php56/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php56/Dockerfile)
+[![](https://images.microbadger.com/badges/image/outrigger/apache-php:php56.svg)](https://microbadger.com/images/outrigger/apache-php:php56 "Get your own image badge on microbadger.com")
+-	[`php70` (*php70/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php70/Dockerfile)
 [![](https://images.microbadger.com/badges/image/outrigger/apache-php:php70.svg)](https://microbadger.com/images/outrigger/apache-php:php70 "Get your own image badge on microbadger.com")
+-	[`php71` (*php71/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php71/Dockerfile)
+[![](https://images.microbadger.com/badges/image/outrigger/apache-php:php71.svg)](https://microbadger.com/images/outrigger/apache-php:php71 "Get your own image badge on microbadger.com")
 
-An image for running Apache with PHP-FPM based on outrigger/apache-php-base. Includes Apache and default VirtualHost configured
-with php-fpm proxy.
+An image for running Apache with PHP-FPM based on outrigger/apache-php-base.
+This includes a default VirtualHost.
 
-For more documentation on how Outrigger images are constructed and how to work with them, please [see the documentation](http://docs.outrigger.sh/).
+For more documentation on how Outrigger images are constructed and how to work
+with them, please [see the documentation](http://docs.outrigger.sh/).
 
 ## Features
 
