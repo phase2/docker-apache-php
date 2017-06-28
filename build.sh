@@ -15,6 +15,6 @@ fi
 # Build each one of them
 for version in $buildDirs; do
   pushd $version
-  docker build -t outrigger/build:${version} .
+  docker build -t outrigger/apache-php:${version} .
   popd
 done
