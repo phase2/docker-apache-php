@@ -18,8 +18,6 @@ RUN yum -y install \
       php70-php-pecl-memcache \
       php70-php-pecl-xdebug \
       php70-php-mcrypt
-      # There is no PHP 7 support for XHProf yet.
-      # php70-php-pecl-xhprof
 
 ENV PHP_HOME /opt/remi/php70
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
