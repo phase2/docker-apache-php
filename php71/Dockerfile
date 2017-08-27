@@ -37,6 +37,18 @@ RUN curl -L -o /tmp/phpredis.tar.gz "https://github.com/phpredis/phpredis/archiv
     make && \
     make install
 
+# Install best identified port of XHProf to PHP 7.
+# See <issue>
+ENV XHPROF_VERSION=1.1
+RUN curl -L -o /tmp/xhprof.tar.gz "https://github.com/longxinH/xhprof/archive/v$XHPROF_VERSION.tar.gz" && \
+    tar -xzf /tmp/xhprof.tar.gz -C /tmp && \
+    rm /tmp/xhprof.tar.gz && \
+    cd "/tmp/xhprof-$XHPROF_VERSION/extension" && \
+    phpize && \
+    ./configure && \
+    make && \
+    make install
+
 # Cleanup the things needed to build phpredis
 RUN yum -y remove gcc-c++ make php71-php-devel; yum clean all
 
