@@ -18,7 +18,8 @@ RUN yum -y install \
       php55-php-pecl-xdebug \
       # The packages below are from php55more.
       php55-php-mcrypt \
-      php55-php-pecl-xhprof
+      php55-php-pecl-xhprof \
+      php55-php-pecl-zip
 
 ENV PHP_HOME /opt/rh/php55
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \

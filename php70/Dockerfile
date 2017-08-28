@@ -10,6 +10,7 @@ RUN yum -y install \
       php70-php-gd \
       php70-php-xml \
       php70-php-pdo \
+      php70-php-mcrypt \
       php70-php-mysql \
       php70-php-mysqlnd \
       php70-php-mbstring \
@@ -17,7 +18,7 @@ RUN yum -y install \
       php70-php-opcache \
       php70-php-pecl-memcache \
       php70-php-pecl-xdebug \
-      php70-php-mcrypt
+      php70-php-pecl-zip
 
 ENV PHP_HOME /opt/remi/php70
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \

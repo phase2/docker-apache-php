@@ -16,6 +16,7 @@ RUN yum -y install \
       rh-php56-php-opcache \
       rh-php56-php-pecl-memcache \
       rh-php56-php-pecl-xdebug \
+      rh-php56-php-pecl-zip \
       # The packages below are from php56more.
       more-php56-php-mcrypt \
       more-php56-php-pecl-xhprof
