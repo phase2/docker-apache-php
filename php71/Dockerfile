@@ -18,9 +18,11 @@ RUN yum -y install \
       php71-php-opcache \
       php71-php-pecl-memcache \
       php71-php-pecl-xdebug \
-      php71-php-pecl-zip
+      php71-php-pecl-yaml \
+      php71-php-pecl-zip && \
       # There is no PHP 7 support for XHProf yet.
       # php71-php-pecl-xhprof
+    yum clean all
 
 ENV PHP_HOME /opt/remi/php71
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
