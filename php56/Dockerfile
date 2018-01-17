@@ -19,7 +19,10 @@ RUN yum -y install \
       rh-php56-php-pecl-zip \
       # The packages below are from php56more.
       more-php56-php-mcrypt \
-      more-php56-php-pecl-xhprof
+      more-php56-php-pecl-xhprof \
+      more-php56-php-pecl-yaml && \
+    yum clean all
+
 
 ENV PHP_HOME /opt/rh/rh-php56
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
@@ -35,9 +38,9 @@ RUN curl -L -o /tmp/phpredis.tar.gz "https://github.com/phpredis/phpredis/archiv
     phpize && \
     ./configure && \
     make && \
-    make install
-
-# Cleanup the things needed to build phpredis.
-RUN yum -y remove gcc-c++ make rh-php56-php-devel; yum clean all
+    make install && \
+    # Clean up build dependencies.
+    yum -y remove gcc-c++ make rh-php56-php-devel && \
+    yum clean all
 
 COPY root /

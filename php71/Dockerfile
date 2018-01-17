@@ -36,9 +36,9 @@ RUN curl -L -o /tmp/phpredis.tar.gz "https://github.com/phpredis/phpredis/archiv
     phpize && \
     ./configure && \
     make && \
-    make install
-
-# Cleanup the things needed to build phpredis
-RUN yum -y remove gcc-c++ make php71-php-devel; yum clean all
+    make install && \
+    # Clean up build dependencies.
+    yum -y remove gcc-c++ make php71-php-devel && \
+    yum clean all
 
 COPY root /
