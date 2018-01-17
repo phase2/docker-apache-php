@@ -18,7 +18,9 @@ RUN yum -y install \
       php70-php-opcache \
       php70-php-pecl-memcache \
       php70-php-pecl-xdebug \
-      php70-php-pecl-zip
+      php70-php-pecl-yaml \
+      php70-php-pecl-zip && \
+      yum clean all
 
 ENV PHP_HOME /opt/remi/php70
 RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
@@ -34,9 +36,9 @@ RUN curl -L -o /tmp/phpredis.tar.gz "https://github.com/phpredis/phpredis/archiv
     phpize && \
     ./configure && \
     make && \
-    make install
-
-# Cleanup the things needed to build phpredis
-RUN yum -y remove gcc-c++ make php70-php-devel; yum clean all
+    make install&& \
+    # Clean up build dependencies.
+    yum -y remove gcc-c++ make php70-php-devel && \
+    yum clean all
 
 COPY root /
