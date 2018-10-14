@@ -1,0 +1,7 @@
+[template]
+src = "xhprof.ini.tmpl"
+dest = "/etc/opt/remi/php72/php.d/15-xhprof.ini"
+uid = 0
+gid = 0
+mode = "0644"
+keys = []
