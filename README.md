@@ -12,6 +12,8 @@
 [![](https://images.microbadger.com/badges/image/outrigger/apache-php:php70.svg)](https://microbadger.com/images/outrigger/apache-php:php70 "Get your own image badge on microbadger.com")
 -	[`php71` (*php71/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php71/Dockerfile)
 [![](https://images.microbadger.com/badges/image/outrigger/apache-php:php71.svg)](https://microbadger.com/images/outrigger/apache-php:php71 "Get your own image badge on microbadger.com")
+-	[`php72` (*php72/Dockerfile*)](https://github.com/phase2/docker-apache-php/blob/master/php72/Dockerfile)
+[![](https://images.microbadger.com/badges/image/outrigger/apache-php:php72.svg)](https://microbadger.com/images/outrigger/apache-php:php72 "Get your own image badge on microbadger.com")
 
 An image for running Apache with PHP-FPM based on outrigger/apache-php-base.
 This includes a default VirtualHost.
