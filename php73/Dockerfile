@@ -6,18 +6,19 @@ RUN yum -y install \
       gcc-c++ \
       make \
       php73 \
+      php73-php-bcmath
       php73-php-devel \
+      php73-php-fpm \
       php73-php-gd \
-      php73-php-xml \
-      php73-php-pdo \
+      php73-php-mbstring \
       php73-php-mcrypt \
+      php73-php-pecl-memcache \
       php73-php-mysql \
       php73-php-mysqlnd \
-      php73-php-mbstring \
-      php73-php-fpm \
       php73-php-opcache \
-      php73-php-pecl-memcache \
+      php73-php-pdo \
       php73-php-pecl-xdebug \
+      php73-php-xml \
       php73-php-pecl-yaml \
       php73-php-pecl-zip && \
       # There is no PHP 7 support for XHProf yet.
