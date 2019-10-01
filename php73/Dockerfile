@@ -12,7 +12,7 @@ RUN yum -y install \
       php73-php-gd \
       php73-php-mbstring \
       php73-php-mcrypt \
-      php73-php-pecl-memcache \
+      php73-php-pecl-memcached \
       php73-php-mysql \
       php73-php-mysqlnd \
       php73-php-opcache \
