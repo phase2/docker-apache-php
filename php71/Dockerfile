@@ -7,17 +7,17 @@ RUN yum -y install \
       make \
       php71 \
       php71-php-devel \
+      php71-php-fpm \
       php71-php-gd \
-      php71-php-xml \
-      php71-php-pdo \
+      php71-php-mbstring \
       php71-php-mcrypt \
+      php71-php-pecl-memcached \
       php71-php-mysql \
       php71-php-mysqlnd \
-      php71-php-mbstring \
-      php71-php-fpm \
       php71-php-opcache \
-      php71-php-pecl-memcache \
+      php71-php-pdo \
       php71-php-pecl-xdebug \
+      php71-php-xml \
       php71-php-pecl-yaml \
       php71-php-pecl-zip && \
       # There is no PHP 7 support for XHProf yet.

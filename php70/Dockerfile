@@ -7,17 +7,17 @@ RUN yum -y install \
       make \
       php70 \
       php70-php-devel \
+      php70-php-fpm \
       php70-php-gd \
-      php70-php-xml \
-      php70-php-pdo \
+      php70-php-mbstring \
       php70-php-mcrypt \
+      php70-php-pecl-memcached \
       php70-php-mysql \
       php70-php-mysqlnd \
-      php70-php-mbstring \
-      php70-php-fpm \
       php70-php-opcache \
-      php70-php-pecl-memcache \
+      php70-php-pdo \
       php70-php-pecl-xdebug \
+      php70-php-xml \
       php70-php-pecl-yaml \
       php70-php-pecl-zip && \
       yum clean all

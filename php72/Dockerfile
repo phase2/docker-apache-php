@@ -12,7 +12,7 @@ RUN yum -y install \
       php72-php-gd \
       php72-php-mbstring \
       php72-php-mcrypt \
-      php72-php-pecl-memcache \
+      php72-php-pecl-memcached \
       php72-php-mysql \
       php72-php-mysqlnd \
       php72-php-opcache \
