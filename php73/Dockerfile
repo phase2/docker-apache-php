@@ -6,7 +6,7 @@ RUN yum -y install \
       gcc-c++ \
       make \
       php73 \
-      php73-php-bcmath
+      php73-php-bcmath \
       php73-php-devel \
       php73-php-fpm \
       php73-php-gd \
