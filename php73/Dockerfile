@@ -31,7 +31,7 @@ RUN ln -sfv ${PHP_HOME}/root/usr/bin/* /usr/bin/ && \
     ln -sfv /dev/stderr /var${PHP_HOME}/log/php-fpm/error.log
 
 # Install phpredis
-ENV PHPREDIS_VERSION 3.1.2
+ENV PHPREDIS_VERSION 5.3.1
 RUN curl -L -o /tmp/phpredis.tar.gz "https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz" && \
     tar -xzf /tmp/phpredis.tar.gz -C /tmp && \
     rm /tmp/phpredis.tar.gz && \
